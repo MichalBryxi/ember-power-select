@@ -165,7 +165,6 @@ export default Component.extend({
   }),
 
   optionIds: computed('options.[]','publicAPI.optionsId', function() {
-    debugger
     return this.get('options').reduce((acc, option, index) => {
       acc[option]=`${this.get('optionsId')}-option-${index}`;
       return acc;
